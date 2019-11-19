@@ -27,6 +27,9 @@
                                         <state key="normal" title="Vert">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Green:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ar-SA-tJZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDJ-bO-wnK">
                                         <rect key="frame" x="108" y="0.0" width="98" height="100"/>
@@ -34,6 +37,9 @@
                                         <state key="normal" title="Rose">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Pink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aL-fJ-uge"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EQ-U3-2bx">
                                         <rect key="frame" x="216" y="0.0" width="98" height="100"/>
@@ -41,6 +47,9 @@
                                         <state key="normal" title="Bleu">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="blue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4O6-jd-9k0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
