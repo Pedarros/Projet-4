@@ -14,16 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func Green(_ sender: Any) {
-        self.view.backgroundColor = UIColor.green
-    }
+    @IBOutlet weak var Button1: UIButton!
     
-    @IBAction func Pink(_ sender: Any) {
-        self.view.backgroundColor = UIColor.magenta
-    }
-    
-    @IBAction func blue(_ sender: Any) {
-        self.view.backgroundColor = UIColor.blue
+    @IBAction func FirstButton(_ sender: Any) {
+        
     }
 }
 
