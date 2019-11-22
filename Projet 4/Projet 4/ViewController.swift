@@ -14,10 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var Button1: UIButton!
     
-    @IBAction func FirstButton(_ sender: Any) {
+    @IBOutlet weak var Button4th: UIButton!
+    
+    @IBOutlet weak var Button2nd: UIButton!
+    
+    @IBAction func ndButtonHyde(_ sender: Any) {
+        Button2nd.isHidden = true
         
+    }
+    
+    @IBAction func Button4hyde(_ sender: Any) {
+        Button4th.isHidden = true
     }
 }
 
