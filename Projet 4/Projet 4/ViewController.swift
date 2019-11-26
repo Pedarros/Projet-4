@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Button4th: UIButton!
     
+    
     @IBOutlet weak var Button2nd: UIButton!
     
     @IBAction func ndButtonHyde(_ sender: Any) {
@@ -28,4 +29,5 @@ class ViewController: UIViewController {
         Button4th.isHidden = true
     }
 }
+
 
