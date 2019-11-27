@@ -18,19 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagrid-1" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-cT-39f">
-                                <rect key="frame" x="133" y="414" width="148" height="68"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-cT-39f">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2RK-85-GB4"/>
+                                    <constraint firstAttribute="height" constant="100" id="oQp-ZP-QTC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.71670317649841309" green="0.84386688470840454" blue="0.895760178565979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kpI-cT-39f" secondAttribute="trailing" constant="133" id="4wn-22-Vr5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kpI-cT-39f" secondAttribute="bottom" constant="380" id="5Wp-R2-nBR"/>
-                            <constraint firstItem="kpI-cT-39f" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ppw-wj-i9p"/>
-                            <constraint firstItem="kpI-cT-39f" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TPk-eb-4jj"/>
-                            <constraint firstItem="kpI-cT-39f" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fqm-uO-KwG"/>
-                            <constraint firstItem="kpI-cT-39f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="gtM-0m-y39"/>
-                            <constraint firstItem="kpI-cT-39f" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sui-gp-FiZ"/>
+                            <constraint firstItem="kpI-cT-39f" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ylf-As-f2b"/>
+                            <constraint firstItem="kpI-cT-39f" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lwi-xp-wwb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Instagrid-1" width="41.5" height="13"/>
+        <image name="Icon" width="60" height="60"/>
     </resources>
 </document>
