@@ -21,11 +21,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sK4-1m-Zcc">
                                 <rect key="frame" x="30" y="742" width="354" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piY-C4-MMA">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piY-C4-MMA">
                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="100"/>
-                                        <state key="normal" backgroundImage="Layout 1"/>
+                                        <state key="normal" image="Selected" backgroundImage="Layout 1"/>
                                         <connections>
                                             <action selector="FirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFi-16-Uyr"/>
+                                            <action selector="LLBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ig-y1-vFH"/>
                                             <action selector="ndButtonHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zql-qN-sgV"/>
                                         </connections>
                                     </button>
@@ -144,7 +145,9 @@
                     <connections>
                         <outlet property="Button2nd" destination="BU0-Gh-1BV" id="daf-cX-DfP"/>
                         <outlet property="Button4th" destination="qV1-m2-NZW" id="h64-zQ-JgB"/>
-                        <outlet property="StackView" destination="kgV-JB-ljx" id="rlT-OE-PqX"/>
+                        <outlet property="LowerLeftButton" destination="piY-C4-MMA" id="p0D-q2-ykf"/>
+                        <outlet property="LowerMiddleButton" destination="Lr3-sd-xAe" id="VkH-vU-KeO"/>
+                        <outlet property="LowerRightButton" destination="SDl-7n-jSI" id="VvX-zf-z5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -159,5 +162,6 @@
         <image name="Layout 2" width="27" height="27"/>
         <image name="Layout 3" width="27" height="27"/>
         <image name="Plus" width="13.5" height="13.5"/>
+        <image name="Selected" width="27" height="27"/>
     </resources>
 </document>

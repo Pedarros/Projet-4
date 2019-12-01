@@ -28,6 +28,17 @@ class ViewController: UIViewController {
     @IBAction func Button4hyde(_ sender: Any) {
         Button4th.isHidden = true
     }
+    
+    @IBOutlet weak var LowerLeftButton: UIButton!
+    
+    @IBOutlet weak var LowerMiddleButton: UIButton!
+    
+    @IBOutlet weak var LowerRightButton: UIButton!
+    
+    @IBAction func LLBSelected(_ sender: Any) {
+        LowerLeftButton.imageView?.isHidden = false
+    }
+    
 }
 
 
