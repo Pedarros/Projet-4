@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var Button1st: UIButton!
+    @IBOutlet weak var Button2nd: UIButton!
+    @IBOutlet weak var Button3rd: UIButton!
     @IBOutlet weak var Button4th: UIButton!
     
-    
-    @IBOutlet weak var Button2nd: UIButton!
-    
+   
     @IBAction func ndButtonHyde(_ sender: Any) {
         Button2nd.isHidden = true
         
@@ -53,7 +54,18 @@ class ViewController: UIViewController {
         LowerMiddleButton.imageView?.isHidden = true
     }
     
+    @IBAction func UploadImageTopleft(_ sender: Any) {
+        
+    }
     
+    @IBAction func UploadImageTopRight(_ sender: Any) {
+    }
+    
+    @IBAction func UploadImageBottomLeft(_ sender: Any) {
+    }
+    
+    @IBAction func UploadImageBottomRight(_ sender: Any) {
+    }
 }
 
 

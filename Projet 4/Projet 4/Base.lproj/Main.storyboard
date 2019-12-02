@@ -65,11 +65,17 @@
                                                         <state key="normal" image="Plus">
                                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="UploadImageTopleft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmr-Mb-Y5d"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU0-Gh-1BV">
                                                         <rect key="frame" x="145" y="0.0" width="135" height="135"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
+                                                        <connections>
+                                                            <action selector="UploadImageTopRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIw-DW-cJb"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,11 +87,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
+                                                        <connections>
+                                                            <action selector="UploadImageBottomLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4q5-9Z-zYr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sku-EV-9la">
                                                         <rect key="frame" x="145" y="0.0" width="135" height="135"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
+                                                        <connections>
+                                                            <action selector="UploadImageBottomRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWW-7G-feP"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -147,7 +159,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Button1st" destination="7p5-jT-8UI" id="UFz-EL-uoo"/>
                         <outlet property="Button2nd" destination="BU0-Gh-1BV" id="daf-cX-DfP"/>
+                        <outlet property="Button3rd" destination="Sku-EV-9la" id="F1Z-oO-pa0"/>
                         <outlet property="Button4th" destination="qV1-m2-NZW" id="h64-zQ-JgB"/>
                         <outlet property="LowerLeftButton" destination="piY-C4-MMA" id="p0D-q2-ykf"/>
                         <outlet property="LowerMiddleButton" destination="Lr3-sd-xAe" id="VkH-vU-KeO"/>
