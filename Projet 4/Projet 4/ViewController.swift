@@ -37,7 +37,22 @@ class ViewController: UIViewController {
     
     @IBAction func LLBSelected(_ sender: Any) {
         LowerLeftButton.imageView?.isHidden = false
+        LowerMiddleButton.imageView?.isHidden = true
+        LowerRightButton.imageView?.isHidden = true
     }
+    
+    @IBAction func LMBSelected(_ sender: Any) {
+        LowerMiddleButton.imageView?.isHidden = false
+        LowerLeftButton.imageView?.isHidden = true
+        LowerMiddleButton.imageView?.isHidden = true
+    }
+    
+    @IBAction func LRBSelected(_ sender: Any) {
+        LowerRightButton.imageView?.isHidden = false
+        LowerLeftButton.imageView?.isHidden = true
+        LowerMiddleButton.imageView?.isHidden = true
+    }
+    
     
 }
 

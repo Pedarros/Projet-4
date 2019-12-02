@@ -30,16 +30,20 @@
                                             <action selector="ndButtonHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zql-qN-sgV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-sd-xAe">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-sd-xAe">
                                         <rect key="frame" x="121.5" y="0.0" width="111" height="100"/>
-                                        <state key="normal" backgroundImage="Layout 2"/>
+                                        <state key="normal" image="Selected" backgroundImage="Layout 2"/>
                                         <connections>
                                             <action selector="Button4hyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QcC-dW-Hzr"/>
+                                            <action selector="LMBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INS-YJ-n5N"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDl-7n-jSI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDl-7n-jSI">
                                         <rect key="frame" x="242.5" y="0.0" width="111.5" height="100"/>
-                                        <state key="normal" backgroundImage="Layout 3"/>
+                                        <state key="normal" image="Selected" backgroundImage="Layout 3"/>
+                                        <connections>
+                                            <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCp-AU-O4r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
