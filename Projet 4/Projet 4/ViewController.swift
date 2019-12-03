@@ -14,6 +14,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    let image = UIImagePickerController()
+    
     
     @IBOutlet weak var Button1st: UIButton!
     @IBOutlet weak var Button2nd: UIButton!
@@ -66,16 +68,33 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBAction func UploadImageTopleft(_ sender: Any) {
         
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
     }
+    
 }
 
 
