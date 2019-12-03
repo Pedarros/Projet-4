@@ -21,13 +21,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var Button4th: UIButton!
     
    
-    @IBAction func ndButtonHyde(_ sender: Any) {
+    @IBAction func Button2ndHyde(_ sender: Any) {
         Button2nd.isHidden = true
-        
+        Button4th.isHidden = false
     }
+    
     
     @IBAction func Button4hyde(_ sender: Any) {
         Button4th.isHidden = true
+        Button2nd.isHidden = false
+    }
+    
+    @IBAction func NoneButtonHyden(_ sender: Any) {
+        Button4th.isHidden = false
+        Button2nd.isHidden = false
     }
     
     @IBOutlet weak var LowerLeftButton: UIButton!
@@ -35,6 +42,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var LowerMiddleButton: UIButton!
     
     @IBOutlet weak var LowerRightButton: UIButton!
+    
+
     
     @IBAction func LLBSelected(_ sender: Any) {
         LowerLeftButton.imageView?.isHidden = false
@@ -53,6 +62,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         LowerLeftButton.imageView?.isHidden = true
         LowerMiddleButton.imageView?.isHidden = true
     }
+    
     
     @IBAction func UploadImageTopleft(_ sender: Any) {
         

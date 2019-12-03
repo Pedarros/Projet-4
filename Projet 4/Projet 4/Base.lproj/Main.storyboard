@@ -25,9 +25,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="100"/>
                                         <state key="normal" image="Selected" backgroundImage="Layout 1"/>
                                         <connections>
-                                            <action selector="FirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFi-16-Uyr"/>
+                                            <action selector="Button2ndHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knJ-TU-J6A"/>
                                             <action selector="LLBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ig-y1-vFH"/>
-                                            <action selector="ndButtonHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zql-qN-sgV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-sd-xAe">
@@ -43,6 +42,7 @@
                                         <state key="normal" image="Selected" backgroundImage="Layout 3"/>
                                         <connections>
                                             <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCp-AU-O4r"/>
+                                            <action selector="NoneButtonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUv-zC-Dm4"/>
                                         </connections>
                                     </button>
                                 </subviews>
