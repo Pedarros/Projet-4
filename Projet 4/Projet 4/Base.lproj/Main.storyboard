@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sK4-1m-Zcc">
                                 <rect key="frame" x="30" y="742" width="354" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piY-C4-MMA">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piY-C4-MMA">
                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="100"/>
                                         <state key="normal" image="Selected" backgroundImage="Layout 1"/>
                                         <connections>
@@ -29,7 +29,7 @@
                                             <action selector="LLBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ig-y1-vFH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-sd-xAe">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-sd-xAe">
                                         <rect key="frame" x="121.5" y="0.0" width="111" height="100"/>
                                         <state key="normal" image="Selected" backgroundImage="Layout 2"/>
                                         <connections>
@@ -37,7 +37,7 @@
                                             <action selector="LMBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INS-YJ-n5N"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDl-7n-jSI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDl-7n-jSI">
                                         <rect key="frame" x="242.5" y="0.0" width="111.5" height="100"/>
                                         <state key="normal" image="Selected" backgroundImage="Layout 3"/>
                                         <connections>

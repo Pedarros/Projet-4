@@ -45,7 +45,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var LowerRightButton: UIButton!
     
-
     
     @IBAction func LLBSelected(_ sender: Any) {
         LowerLeftButton.imageView?.isHidden = false
@@ -56,7 +55,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBAction func LMBSelected(_ sender: Any) {
         LowerMiddleButton.imageView?.isHidden = false
         LowerLeftButton.imageView?.isHidden = true
-        LowerMiddleButton.imageView?.isHidden = true
+        LowerRightButton.imageView?.isHidden = true
     }
     
     @IBAction func LRBSelected(_ sender: Any) {
@@ -68,31 +67,55 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBAction func UploadImageTopleft(_ sender: Any) {
         
-        image.delegate = self
+        upload()
+        
+        /*image.delegate = self
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
-        self.present(image, animated: true)
+        self.present(image, animated: true) {
+            
+        } */
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
-        image.delegate = self
+        upload()
+       /* image.delegate = self
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
-        self.present(image, animated: true)
+        self.present(image, animated: true) {
+            
+        }*/
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
-        image.delegate = self
+        upload()
+        
+        /*image.delegate = self
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
-        self.present(image, animated: true)
+        self.present(image, animated: true) {
+            
+        } */
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
+        upload()
+        /*image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true) {
+            
+        }*/
+    
+    }
+    
+    func upload() {
         image.delegate = self
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
-        self.present(image, animated: true)
+        self.present(image, animated: true) {
+            
+        }
     }
     
 }
