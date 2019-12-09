@@ -45,11 +45,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var LowerRightButton: UIButton!
     
+    let butonImage = #imageLiteral(resourceName: "Selected")
     
     @IBAction func LLBSelected(_ sender: Any) {
-        LowerLeftButton.imageView?.isHidden = false
+         LowerLeftButton.imageView?.isHidden = false
         LowerMiddleButton.imageView?.isHidden = true
         LowerRightButton.imageView?.isHidden = true
+    
+        
     }
     
     @IBAction func LMBSelected(_ sender: Any) {
@@ -69,44 +72,26 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         upload()
         
-        /*image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true) {
-            
-        } */
+        
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
         upload()
-       /* image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true) {
-            
-        }*/
+        
+       
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
         upload()
         
-        /*image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true) {
-            
-        } */
+        
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
         upload()
-        /*image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true) {
-            
-        }*/
+        
     
+        
     }
     
     func upload() {
@@ -114,8 +99,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
         self.present(image, animated: true) {
-            
+        
         }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        Button1st.setBackgroundImage(image, for: .normal)
     }
     
 }
