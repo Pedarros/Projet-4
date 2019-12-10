@@ -47,13 +47,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     let butonImage = #imageLiteral(resourceName: "Selected")
     
-    @IBAction func LLBSelected(_ sender: Any) {
-         LowerLeftButton.imageView?.isHidden = false
-        LowerMiddleButton.imageView?.isHidden = true
-        LowerRightButton.imageView?.isHidden = true
     
+    @IBAction func LLBSelected(_ sender: Any) {
+       
         
-    }
+        /* LowerLeftButton.imageView?.isHidden = false
+         LowerMiddleButton.imageView?.isHidden = true
+         LowerRightButton.imageView?.isHidden = true */
+        
+        }
+        
+    
     
     @IBAction func LMBSelected(_ sender: Any) {
         LowerMiddleButton.imageView?.isHidden = false
