@@ -8,15 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.delegate = self
+        image.allowsEditing = true
         // Do any additional setup after loading the view.
     }
     let image = UIImagePickerController()
     
-    
+    var imageTmp =  UIButton()
     @IBOutlet weak var Button1st: UIButton!
     @IBOutlet weak var Button2nd: UIButton!
     @IBOutlet weak var Button3rd: UIButton!
@@ -24,6 +26,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
    
     @IBAction func Button2ndHyde(_ sender: Any) {
+        Button2nd.isHidden = true
+        Button4th.isHidden = false
+    }
+    
+    @IBAction func Button4thhyde(_ sender: Any) {
+        Button4th.isHidden = true
+        Button2nd.isHidden = false
+    }
+    
+    @IBAction func NonbuttonHyden(_ sender: Any) {
+        Button4th.isHidden = false
+        Button2nd.isHidden = false
+    }
+    /* @IBAction func Button2ndHyde(_ sender: Any) {
         Button2nd.isHidden = true
         Button4th.isHidden = false
     }
@@ -38,7 +54,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         Button4th.isHidden = false
         Button2nd.isHidden = false
     }
-    
+    */
     @IBOutlet weak var LowerLeftButton: UIButton!
     
     @IBOutlet weak var LowerMiddleButton: UIButton!
@@ -73,49 +89,56 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     
     @IBAction func UploadImageTopleft(_ sender: Any) {
-        
-        upload()
+        imageTmp = Button1st
+        self.presentWithSource(source: .photoLibrary)
         
         
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
-        upload()
+        imageTmp = Button2nd
+        self.presentWithSource(source: .photoLibrary)
         
        
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
-        upload()
+        imageTmp = Button4th
+        self.presentWithSource(source: .photoLibrary)
         
         
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
-        upload()
+        imageTmp = Button3rd
+        self.presentWithSource(source: .photoLibrary)
         
     
         
     }
     
-    func upload() {
+    /*func upload() {
         image.delegate = self
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
-        self.present(image, animated: true) {
-        
-        }
+        self.present(image, animated: true)
+     
+    }*/
+    func presentWithSource(source: UIImagePickerController.SourceType) {
+        image.sourceType = source
+        present(image, animated: true, completion: nil)
     }
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: true)
-        
-        guard let image = info[.editedImage] as? UIImage else {
-            print("No image found")
-            return
-        }
-        Button1st.setBackgroundImage(image, for: .normal)
-    }
+    
     
 }
 
 
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // extention for presentWithSource function
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let edite = info[.editedImage] as? UIImage {
+            imageTmp.setBackgroundImage(edite, for: .normal)
+        }
+        dismiss(animated: true, completion: nil)
+    }
+}
