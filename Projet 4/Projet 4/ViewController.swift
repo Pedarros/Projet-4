@@ -65,7 +65,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func LLBSelected(_ sender: Any) {
-       
+       setBackground()
         
         /* LowerLeftButton.imageView?.isHidden = false
          LowerMiddleButton.imageView?.isHidden = true
@@ -76,15 +76,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func LMBSelected(_ sender: Any) {
-        LowerMiddleButton.imageView?.isHidden = false
+        setBackground()
+        
+       /* LowerMiddleButton.imageView?.isHidden = false
         LowerLeftButton.imageView?.isHidden = true
-        LowerRightButton.imageView?.isHidden = true
+        LowerRightButton.imageView?.isHidden = true */
     }
     
     @IBAction func LRBSelected(_ sender: Any) {
-        LowerRightButton.imageView?.isHidden = false
+        setBackground()
+       /* LowerRightButton.imageView?.isHidden = false
         LowerLeftButton.imageView?.isHidden = true
-        LowerMiddleButton.imageView?.isHidden = true
+        LowerMiddleButton.imageView?.isHidden = true*/
     }
     
     
@@ -128,8 +131,12 @@ class ViewController: UIViewController {
         image.sourceType = source
         present(image, animated: true, completion: nil)
     }
-    
-    
+    func setBackground() {
+    let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named : "butonImage")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+    self.view.insertSubview(backgroundImage, at: 0)
+    }
 }
 
 
@@ -142,3 +149,4 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         dismiss(animated: true, completion: nil)
     }
 }
+
