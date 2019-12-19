@@ -39,55 +39,36 @@ class ViewController: UIViewController {
         Button4th.isHidden = false
         Button2nd.isHidden = false
     }
-    /* @IBAction func Button2ndHyde(_ sender: Any) {
-        Button2nd.isHidden = true
-        Button4th.isHidden = false
-    }
     
-    
-    @IBAction func Button4hyde(_ sender: Any) {
-        Button4th.isHidden = true
-        Button2nd.isHidden = false
-    }
-    
-    @IBAction func NoneButtonHyden(_ sender: Any) {
-        Button4th.isHidden = false
-        Button2nd.isHidden = false
-    }
-    */
     @IBOutlet weak var LowerLeftButton: UIButton!
     
     @IBOutlet weak var LowerMiddleButton: UIButton!
     
     @IBOutlet weak var LowerRightButton: UIButton!
     
-    let butonImage = #imageLiteral(resourceName: "Selected")
+   
     
     
     @IBAction func LLBSelected(_ sender: Any) {
-       setBackground()
-        
-        /* LowerLeftButton.imageView?.isHidden = false
-         LowerMiddleButton.imageView?.isHidden = true
-         LowerRightButton.imageView?.isHidden = true */
-        
+         LowerLeftButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
+        LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
+        LowerRightButton.setBackgroundImage(UIImage(named: "Layout 3"), for: .normal)
         }
         
     
     
     @IBAction func LMBSelected(_ sender: Any) {
-        setBackground()
+        LowerMiddleButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
+        LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
+        LowerRightButton.setBackgroundImage(UIImage(named: "Layout 3"), for: .normal)
         
-       /* LowerMiddleButton.imageView?.isHidden = false
-        LowerLeftButton.imageView?.isHidden = true
-        LowerRightButton.imageView?.isHidden = true */
     }
     
     @IBAction func LRBSelected(_ sender: Any) {
-        setBackground()
-       /* LowerRightButton.imageView?.isHidden = false
-        LowerLeftButton.imageView?.isHidden = true
-        LowerMiddleButton.imageView?.isHidden = true*/
+        LowerRightButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
+        LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
+        LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
+        
     }
     
     
@@ -120,23 +101,12 @@ class ViewController: UIViewController {
         
     }
     
-    /*func upload() {
-        image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true)
-     
-    }*/
+    
     func presentWithSource(source: UIImagePickerController.SourceType) {
         image.sourceType = source
         present(image, animated: true, completion: nil)
     }
-    func setBackground() {
-    let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named : "butonImage")
-        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-    self.view.insertSubview(backgroundImage, at: 0)
-    }
+    
 }
 
 

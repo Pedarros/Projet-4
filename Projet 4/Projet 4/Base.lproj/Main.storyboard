@@ -113,30 +113,32 @@
                                         <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="80"/>
                                         <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
-                                            <action selector="Button2ndHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kzb-mW-gGs"/>
+                                            <action selector="Button2ndHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpD-4t-MGB"/>
+                                            <action selector="LLBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nty-wa-DII"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLh-1g-C1c">
                                         <rect key="frame" x="121.33333333333334" y="0.0" width="111.33333333333334" height="80"/>
                                         <state key="normal" backgroundImage="Layout 2"/>
                                         <connections>
-                                            <action selector="Button4hyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaP-tq-z5R"/>
-                                            <action selector="Button4thhyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nL2-Bh-bO8"/>
+                                            <action selector="Button4thhyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbA-kn-Mot"/>
+                                            <action selector="LMBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65m-Dr-ZoI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukm-SS-Wxi">
                                         <rect key="frame" x="242.66666666666671" y="0.0" width="111.33333333333334" height="80"/>
                                         <state key="normal" backgroundImage="Layout 3"/>
                                         <connections>
-                                            <action selector="NonbuttonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xx-Rg-LwF"/>
-                                            <action selector="NoneButtonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAn-it-bPq"/>
+                                            <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7h-c8-8kh"/>
+                                            <action selector="NonbuttonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htP-kN-qNH"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="B0w-da-CNf"/>
                                 </constraints>
-                                <variation key="heightClass=compact" axis="vertical" spacing="4"/>
+                                <variation key="heightClass=compact" spacing="4"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
                                 <rect key="frame" x="203" y="163" width="8" height="8"/>
@@ -176,6 +178,9 @@
                         <outlet property="Button2nd" destination="BU0-Gh-1BV" id="daf-cX-DfP"/>
                         <outlet property="Button3rd" destination="Sku-EV-9la" id="F1Z-oO-pa0"/>
                         <outlet property="Button4th" destination="qV1-m2-NZW" id="h64-zQ-JgB"/>
+                        <outlet property="LowerLeftButton" destination="b07-4R-02j" id="8FM-be-GGb"/>
+                        <outlet property="LowerMiddleButton" destination="hLh-1g-C1c" id="uks-kR-eT1"/>
+                        <outlet property="LowerRightButton" destination="Ukm-SS-Wxi" id="PpF-rJ-5aP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
