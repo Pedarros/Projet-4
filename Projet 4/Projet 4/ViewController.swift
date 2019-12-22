@@ -23,8 +23,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button2nd: UIButton!
     @IBOutlet weak var Button3rd: UIButton!
     @IBOutlet weak var Button4th: UIButton!
-    
    
+    
+    @IBOutlet var Swipe: UISwipeGestureRecognizer!
+    
+    
+    
     @IBAction func Button2ndHyde(_ sender: Any) {
         Button2nd.isHidden = true
         Button4th.isHidden = false
