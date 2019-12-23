@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,20 +20,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Projet_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-Iw-4pL">
-                                <rect key="frame" x="58.666666666666657" y="277" width="258" height="258"/>
+                                <rect key="frame" x="291" y="72.666666666666686" width="230" height="230"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="44F-rh-NHo">
-                                        <rect key="frame" x="10" y="10" width="238" height="238"/>
+                                        <rect key="frame" x="10" y="10" width="210" height="210"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-JB-ljx">
-                                                <rect key="frame" x="0.0" y="0.0" width="238" height="114"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-jT-8UI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus">
                                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU0-Gh-1BV">
-                                                        <rect key="frame" x="124" y="0.0" width="114" height="114"/>
+                                                        <rect key="frame" x="110" y="0.0" width="100" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -54,10 +54,10 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Eon-fo-rYF">
-                                                <rect key="frame" x="0.0" y="124" width="238" height="114"/>
+                                                <rect key="frame" x="0.0" y="110" width="210" height="100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV1-m2-NZW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -65,7 +65,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sku-EV-9la">
-                                                        <rect key="frame" x="124" y="0.0" width="114" height="114"/>
+                                                        <rect key="frame" x="110" y="0.0" width="100" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -142,13 +142,14 @@
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RlS-vt-Okv" appends="YES" id="7cT-b6-zFK"/>
+                                    <outletCollection property="gestureRecognizers" destination="sMk-Vb-gek" appends="YES" id="IG4-AL-g3X"/>
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mA5-eq-nW6">
-                                <rect key="frame" x="30" y="678" width="315" height="70"/>
+                                <rect key="frame" x="648" y="30" width="90" height="315"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b07-4R-02j">
-                                        <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="102.33333333333333"/>
                                         <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
                                             <action selector="Button2ndHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpD-4t-MGB"/>
@@ -156,7 +157,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLh-1g-C1c">
-                                        <rect key="frame" x="111.66666666666666" y="0.0" width="91.666666666666657" height="70"/>
+                                        <rect key="frame" x="0.0" y="106.33333333333334" width="90" height="102.33333333333334"/>
                                         <state key="normal" backgroundImage="Layout 2"/>
                                         <connections>
                                             <action selector="Button4thhyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbA-kn-Mot"/>
@@ -164,7 +165,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukm-SS-Wxi">
-                                        <rect key="frame" x="223.33333333333334" y="0.0" width="91.666666666666657" height="70"/>
+                                        <rect key="frame" x="0.0" y="212.66666666666666" width="90" height="102.33333333333334"/>
                                         <state key="normal" backgroundImage="Layout 3"/>
                                         <connections>
                                             <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7h-c8-8kh"/>
@@ -192,13 +193,13 @@
                                 </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-gU-Dhq">
-                                <rect key="frame" x="136.33333333333334" y="64" width="102.66666666666666" height="33.666666666666657"/>
+                                <rect key="frame" x="354.66666666666669" y="26.666666666666668" width="102.66666666666669" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Qv-2j9">
-                                <rect key="frame" x="119.66666666666667" y="242.66666666666666" width="135.66666666666663" height="24.333333333333343"/>
+                                <rect key="frame" x="64" y="199.33333333333334" width="229" height="24.333333333333343"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Swipe left to share">
                                         <attributes>
@@ -220,7 +221,7 @@
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
-                                <rect key="frame" x="185.33333333333334" y="200.33333333333334" width="4.6666666666666572" height="37.333333333333343"/>
+                                <rect key="frame" x="86" y="175" width="107" height="4.6666666666666572"/>
                                 <variation key="heightClass=compact" image="Arrow Left"/>
                             </imageView>
                         </subviews>
@@ -270,17 +271,17 @@
                             <mask key="constraints">
                                 <exclude reference="ror-6f-Grd"/>
                                 <exclude reference="xs6-ON-CxY"/>
-                                <exclude reference="QUv-h7-c33"/>
-                                <exclude reference="sxF-3l-Zkb"/>
+                                <exclude reference="SuY-0W-JOu"/>
                                 <exclude reference="6ZX-UV-duU"/>
                                 <exclude reference="Tbe-VW-lu0"/>
                                 <exclude reference="pTa-VP-naC"/>
+                                <exclude reference="QUv-h7-c33"/>
+                                <exclude reference="sxF-3l-Zkb"/>
                                 <exclude reference="89d-Uf-obv"/>
                                 <exclude reference="8r3-zk-tnC"/>
                                 <exclude reference="Wx0-F6-cxJ"/>
                                 <exclude reference="YMt-rU-Azj"/>
                                 <exclude reference="fFw-6q-Waw"/>
-                                <exclude reference="SuY-0W-JOu"/>
                                 <exclude reference="OOQ-CO-hsv"/>
                                 <exclude reference="Vlz-9Y-bEC"/>
                             </mask>
@@ -288,17 +289,17 @@
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="xs6-ON-CxY"/>
-                                <include reference="QUv-h7-c33"/>
-                                <include reference="sxF-3l-Zkb"/>
+                                <include reference="SuY-0W-JOu"/>
                                 <include reference="6ZX-UV-duU"/>
                                 <exclude reference="Tbe-VW-lu0"/>
                                 <include reference="pTa-VP-naC"/>
+                                <include reference="QUv-h7-c33"/>
+                                <include reference="sxF-3l-Zkb"/>
                                 <include reference="89d-Uf-obv"/>
                                 <include reference="8r3-zk-tnC"/>
                                 <include reference="Wx0-F6-cxJ"/>
                                 <include reference="YMt-rU-Azj"/>
                                 <include reference="fFw-6q-Waw"/>
-                                <include reference="SuY-0W-JOu"/>
                                 <include reference="OOQ-CO-hsv"/>
                                 <include reference="Vlz-9Y-bEC"/>
                             </mask>
@@ -309,15 +310,15 @@
                                 <exclude reference="ij0-xl-R5g"/>
                                 <exclude reference="opD-bN-ZK0"/>
                                 <exclude reference="uFz-qC-4lD"/>
-                                <exclude reference="Xl7-7q-ma2"/>
-                                <exclude reference="rgB-Yb-Gzc"/>
+                                <exclude reference="CVW-k1-A2D"/>
+                                <exclude reference="wMK-fD-5kl"/>
                                 <exclude reference="83c-fR-eLL"/>
                                 <exclude reference="Mqr-1n-RCz"/>
+                                <exclude reference="Xl7-7q-ma2"/>
+                                <exclude reference="rgB-Yb-Gzc"/>
                                 <exclude reference="db0-51-LsD"/>
                                 <exclude reference="lRE-Rb-bWS"/>
                                 <exclude reference="qwL-d5-EhJ"/>
-                                <exclude reference="CVW-k1-A2D"/>
-                                <exclude reference="wMK-fD-5kl"/>
                                 <exclude reference="9qU-5L-5F9"/>
                                 <exclude reference="IC9-yK-ozB"/>
                                 <exclude reference="nW2-N9-VPw"/>
@@ -331,15 +332,15 @@
                                 <exclude reference="opD-bN-ZK0"/>
                                 <exclude reference="ror-6f-Grd"/>
                                 <exclude reference="uFz-qC-4lD"/>
-                                <exclude reference="Xl7-7q-ma2"/>
-                                <exclude reference="rgB-Yb-Gzc"/>
+                                <exclude reference="CVW-k1-A2D"/>
+                                <exclude reference="wMK-fD-5kl"/>
                                 <exclude reference="83c-fR-eLL"/>
                                 <exclude reference="Mqr-1n-RCz"/>
+                                <exclude reference="Xl7-7q-ma2"/>
+                                <exclude reference="rgB-Yb-Gzc"/>
                                 <exclude reference="db0-51-LsD"/>
                                 <exclude reference="lRE-Rb-bWS"/>
                                 <exclude reference="qwL-d5-EhJ"/>
-                                <exclude reference="CVW-k1-A2D"/>
-                                <exclude reference="wMK-fD-5kl"/>
                                 <exclude reference="9qU-5L-5F9"/>
                                 <exclude reference="IC9-yK-ozB"/>
                                 <exclude reference="nW2-N9-VPw"/>
@@ -352,6 +353,7 @@
                         <outlet property="Button2nd" destination="BU0-Gh-1BV" id="daf-cX-DfP"/>
                         <outlet property="Button3rd" destination="Sku-EV-9la" id="F1Z-oO-pa0"/>
                         <outlet property="Button4th" destination="qV1-m2-NZW" id="h64-zQ-JgB"/>
+                        <outlet property="GridSwipe" destination="sMk-Vb-gek" id="a1U-o5-1o8"/>
                         <outlet property="LowerLeftButton" destination="b07-4R-02j" id="8FM-be-GGb"/>
                         <outlet property="LowerMiddleButton" destination="hLh-1g-C1c" id="uks-kR-eT1"/>
                         <outlet property="LowerRightButton" destination="Ukm-SS-Wxi" id="PpF-rJ-5aP"/>
@@ -360,6 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="RlS-vt-Okv"/>
+                <swipeGestureRecognizer direction="right" id="sMk-Vb-gek"/>
             </objects>
             <point key="canvasLocation" x="134.1549295774648" y="108.75"/>
         </scene>

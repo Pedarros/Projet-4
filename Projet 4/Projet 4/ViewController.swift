@@ -26,8 +26,15 @@ class ViewController: UIViewController {
    
     
     @IBOutlet var Swipe: UISwipeGestureRecognizer!
+    func SwipeUp() {
+        Swipe.direction = .up
+    }
     
+    @IBOutlet var GridSwipe: UISwipeGestureRecognizer!
     
+    func SwipeLeft() {
+        GridSwipe.direction = .left
+    }
     
     @IBAction func Button2ndHyde(_ sender: Any) {
         Button2nd.isHidden = true
