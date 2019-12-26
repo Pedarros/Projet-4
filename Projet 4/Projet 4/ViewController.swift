@@ -25,16 +25,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button4th: UIButton!
    
     
-    @IBOutlet var Swipe: UISwipeGestureRecognizer!
-    func SwipeUp() {
-        Swipe.direction = .up
+    @IBAction func SwipeUp(_ sender: Any) {
+        let activityController = UIActivityViewController(activityItems: [UITextField.text], applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
     }
     
-    @IBOutlet var GridSwipe: UISwipeGestureRecognizer!
-    
-    func SwipeLeft() {
-        GridSwipe.direction = .left
-    }
     
     @IBAction func Button2ndHyde(_ sender: Any) {
         Button2nd.isHidden = true
