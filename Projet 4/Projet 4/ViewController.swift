@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Projet 4
-//
-//  Created by Pedarros Emile on 13/11/2019.
-//  Copyright © 2019 Pedarros Emile. All rights reserved.
-//
 
 import UIKit
 
@@ -19,23 +12,32 @@ class ViewController: UIViewController {
     let image = UIImagePickerController()
     
     var imageTmp =  UIButton()
+    
+    // Declaration of the buttons where we'll upload the photos
     @IBOutlet weak var Button1st: UIButton!
     @IBOutlet weak var Button2nd: UIButton!
     @IBOutlet weak var Button3rd: UIButton!
     @IBOutlet weak var Button4th: UIButton!
    
+    // Function for the swipe
+    
     
     @IBAction func SwipeUp(_ sender: Any) {
+        
+        
         let activityController = UIActivityViewController(activityItems: [UITextField.text], applicationActivities: nil)
         present(activityController, animated: true, completion: nil)
-    }
+        }
     
     
+    
+    // Hyding the second button in order to have a bigger picture at the top
     @IBAction func Button2ndHyde(_ sender: Any) {
         Button2nd.isHidden = true
         Button4th.isHidden = false
     }
     
+     // Hyding the second button in order to have a bigger picture at the bottom
     @IBAction func Button4thhyde(_ sender: Any) {
         Button4th.isHidden = true
         Button2nd.isHidden = false
@@ -46,6 +48,7 @@ class ViewController: UIViewController {
         Button2nd.isHidden = false
     }
     
+    // Declaration of the three buttons at the bottom
     @IBOutlet weak var LowerLeftButton: UIButton!
     
     @IBOutlet weak var LowerMiddleButton: UIButton!
@@ -54,7 +57,7 @@ class ViewController: UIViewController {
     
    
     
-    
+    // Insert of the selected background
     @IBAction func LLBSelected(_ sender: Any) {
          LowerLeftButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
         LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
@@ -77,37 +80,28 @@ class ViewController: UIViewController {
         
     }
     
-    
+    // Function for uploading images
     @IBAction func UploadImageTopleft(_ sender: Any) {
         imageTmp = Button1st
         self.presentWithSource(source: .photoLibrary)
-        
-        
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
         imageTmp = Button2nd
         self.presentWithSource(source: .photoLibrary)
-        
-       
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
         imageTmp = Button4th
         self.presentWithSource(source: .photoLibrary)
-        
-        
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
         imageTmp = Button3rd
         self.presentWithSource(source: .photoLibrary)
-        
-    
-        
     }
     
-    
+    // Function for uploading images
     func presentWithSource(source: UIImagePickerController.SourceType) {
         image.sourceType = source
         present(image, animated: true, completion: nil)
