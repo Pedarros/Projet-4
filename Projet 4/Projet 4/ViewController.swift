@@ -21,15 +21,25 @@ class ViewController: UIViewController {
    
     // Function for the swipe
     
+    @IBOutlet var MySwipe: UISwipeGestureRecognizer!
     
     @IBAction func SwipeUp(_ sender: Any) {
-        
-        
-        let activityController = UIActivityViewController(activityItems: [UITextField.text], applicationActivities: nil)
-        present(activityController, animated: true, completion: nil)
+        if UIDevice.current.orientation.isPortrait {
+            MySwipe.direction = .up
+            moveViewVertically()
+            convertViewToImage()
+        } else if UIDevice.current.orientation.isLandscape {
+            MySwipe.direction = .left
+            
+            convertViewToImage()
+            
         }
+    /*    let activityController = UIActivityViewController(activityItems: [UITextField.text], applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
+        */
+    }
     
-    
+    @IBOutlet weak var MyView: UIView!
     
     // Hyding the second button in order to have a bigger picture at the top
     @IBAction func Button2ndHyde(_ sender: Any) {
@@ -106,6 +116,35 @@ class ViewController: UIViewController {
         image.sourceType = source
         present(image, animated: true, completion: nil)
     }
+    private func convertViewToImage() {
+        // convert Grid view to an image
+        UIGraphicsBeginImageContextWithOptions(MyView.frame.size, view.isOpaque, 0)
+        MyView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else
+        {
+            return
+            
+        }
+        UIGraphicsEndImageContext()
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityViewController.completionWithItemsHandler = {(UIActivityType: UIActivity.ActivityType?, completed: Bool, returnedItems: [Any]?, error: Error?) in
+            UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: { self.MyView.transform = .identity
+            }
+                ,completion: nil)
+        }
+        present(activityViewController, animated: true, completion: nil)
+    }
+    private func moveViewVertically() {
+        // verticall animation
+        
+            UIView.animate(withDuration: 0.5) {
+                self.MyView.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height) //changer X et Y pour le landscape
+            }
+        // Après l'annulation du partage ou le partage
+            /*UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: { self.MyView.transform = .identity
+            }
+                ,completion: nil) */
+        }
     
 }
 
