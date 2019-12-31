@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             convertViewToImage()
         } else if UIDevice.current.orientation.isLandscape {
             MySwipe.direction = .left
-            
+            moveViewHorizontally()
             convertViewToImage()
             
         }
@@ -145,6 +145,13 @@ class ViewController: UIViewController {
             }
                 ,completion: nil) */
         }
+    private func moveViewHorizontally() {
+        // verticall animation
+        
+        UIView.animate(withDuration: 0.5) {
+            self.MyView.transform = CGAffineTransform(translationX: -self.view.frame.height, y: 0)
+        }
+    }
     
 }
 
