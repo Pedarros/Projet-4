@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-Iw-4pL">
-                                <rect key="frame" x="62.666666666666657" y="285" width="249.99999999999997" height="250"/>
+                                <rect key="frame" x="62.666666666666657" y="281" width="249.99999999999997" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="44F-rh-NHo">
                                         <rect key="frame" x="10" y="10" width="230" height="230"/>
@@ -151,7 +151,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="70"/>
                                         <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
-                                            <action selector="Button2ndHyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpD-4t-MGB"/>
+                                            <action selector="Button2ndHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nce-o5-AFZ"/>
                                             <action selector="LLBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nty-wa-DII"/>
                                         </connections>
                                     </button>
@@ -159,7 +159,7 @@
                                         <rect key="frame" x="111.66666666666666" y="0.0" width="91.666666666666657" height="70"/>
                                         <state key="normal" backgroundImage="Layout 2"/>
                                         <connections>
-                                            <action selector="Button4thhyde:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbA-kn-Mot"/>
+                                            <action selector="Button4thHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FuS-4T-FPZ"/>
                                             <action selector="LMBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65m-Dr-ZoI"/>
                                         </connections>
                                     </button>
@@ -167,7 +167,6 @@
                                         <rect key="frame" x="223.33333333333334" y="0.0" width="91.666666666666657" height="70"/>
                                         <state key="normal" backgroundImage="Layout 3"/>
                                         <connections>
-                                            <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7h-c8-8kh"/>
                                             <action selector="NonbuttonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htP-kN-qNH"/>
                                         </connections>
                                     </button>
@@ -198,7 +197,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Qv-2j9">
-                                <rect key="frame" x="119.66666666666667" y="250.66666666666666" width="135.66666666666663" height="24.333333333333343"/>
+                                <rect key="frame" x="119.66666666666667" y="246.66666666666666" width="135.66666666666663" height="24.333333333333343"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Swipe left to share">
                                         <attributes>
@@ -220,7 +219,7 @@
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
-                                <rect key="frame" x="185.33333333333334" y="200.33333333333334" width="4.6666666666666572" height="45.333333333333343"/>
+                                <rect key="frame" x="185.33333333333334" y="200.33333333333334" width="4.6666666666666572" height="41.333333333333343"/>
                                 <variation key="heightClass=compact" image="Arrow Left"/>
                             </imageView>
                         </subviews>
@@ -233,10 +232,12 @@
                             <constraint firstItem="mYs-Iw-4pL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0Zl-Qv-2j9" secondAttribute="trailing" priority="750" constant="57" id="89d-Uf-obv">
                                 <variation key="heightClass=compact" constant="-2"/>
                             </constraint>
-                            <constraint firstItem="mYs-Iw-4pL" firstAttribute="leading" secondItem="it5-CG-KAx" secondAttribute="trailing" constant="98" id="8r3-zk-tnC"/>
+                            <constraint firstItem="mYs-Iw-4pL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="it5-CG-KAx" secondAttribute="trailing" constant="98" id="8r3-zk-tnC"/>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="9qU-5L-5F9"/>
                             <constraint firstItem="p0F-gU-Dhq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CVW-k1-A2D"/>
+                            <constraint firstItem="mYs-Iw-4pL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cuu-Mg-EL6"/>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IC9-yK-ozB"/>
+                            <constraint firstItem="mYs-Iw-4pL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IHM-CH-Vwg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mA5-eq-nW6" secondAttribute="bottom" constant="30" id="MEz-UI-6md"/>
                             <constraint firstItem="0Zl-Qv-2j9" firstAttribute="top" secondItem="it5-CG-KAx" secondAttribute="bottom" constant="5" id="Mqr-1n-RCz"/>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OOQ-CO-hsv"/>
@@ -270,11 +271,11 @@
                                 <exclude reference="ror-6f-Grd"/>
                                 <exclude reference="xs6-ON-CxY"/>
                                 <exclude reference="SuY-0W-JOu"/>
+                                <exclude reference="QUv-h7-c33"/>
+                                <exclude reference="sxF-3l-Zkb"/>
                                 <exclude reference="6ZX-UV-duU"/>
                                 <exclude reference="Tbe-VW-lu0"/>
                                 <exclude reference="pTa-VP-naC"/>
-                                <exclude reference="QUv-h7-c33"/>
-                                <exclude reference="sxF-3l-Zkb"/>
                                 <exclude reference="89d-Uf-obv"/>
                                 <exclude reference="8r3-zk-tnC"/>
                                 <exclude reference="Wx0-F6-cxJ"/>
@@ -288,11 +289,11 @@
                             <mask key="constraints">
                                 <include reference="xs6-ON-CxY"/>
                                 <include reference="SuY-0W-JOu"/>
+                                <include reference="QUv-h7-c33"/>
+                                <include reference="sxF-3l-Zkb"/>
                                 <include reference="6ZX-UV-duU"/>
                                 <exclude reference="Tbe-VW-lu0"/>
                                 <include reference="pTa-VP-naC"/>
-                                <include reference="QUv-h7-c33"/>
-                                <include reference="sxF-3l-Zkb"/>
                                 <include reference="89d-Uf-obv"/>
                                 <include reference="8r3-zk-tnC"/>
                                 <include reference="Wx0-F6-cxJ"/>
@@ -310,10 +311,10 @@
                                 <exclude reference="uFz-qC-4lD"/>
                                 <exclude reference="CVW-k1-A2D"/>
                                 <exclude reference="wMK-fD-5kl"/>
-                                <exclude reference="83c-fR-eLL"/>
-                                <exclude reference="Mqr-1n-RCz"/>
                                 <exclude reference="Xl7-7q-ma2"/>
                                 <exclude reference="rgB-Yb-Gzc"/>
+                                <exclude reference="83c-fR-eLL"/>
+                                <exclude reference="Mqr-1n-RCz"/>
                                 <exclude reference="db0-51-LsD"/>
                                 <exclude reference="qwL-d5-EhJ"/>
                                 <exclude reference="9qU-5L-5F9"/>
@@ -331,10 +332,10 @@
                                 <exclude reference="uFz-qC-4lD"/>
                                 <exclude reference="CVW-k1-A2D"/>
                                 <exclude reference="wMK-fD-5kl"/>
-                                <exclude reference="83c-fR-eLL"/>
-                                <exclude reference="Mqr-1n-RCz"/>
                                 <exclude reference="Xl7-7q-ma2"/>
                                 <exclude reference="rgB-Yb-Gzc"/>
+                                <exclude reference="83c-fR-eLL"/>
+                                <exclude reference="Mqr-1n-RCz"/>
                                 <exclude reference="db0-51-LsD"/>
                                 <exclude reference="qwL-d5-EhJ"/>
                                 <exclude reference="9qU-5L-5F9"/>

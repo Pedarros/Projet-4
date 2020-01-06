@@ -41,18 +41,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var MyView: UIView!
     
     // Hyding the second button in order to have a bigger picture at the top
-    @IBAction func Button2ndHyde(_ sender: Any) {
+    @IBAction func Button2ndHidden(_ sender: Any) {
         Button2nd.isHidden = true
         Button4th.isHidden = false
     }
     
      // Hyding the second button in order to have a bigger picture at the bottom
-    @IBAction func Button4thhyde(_ sender: Any) {
+    
+    @IBAction func Button4thHidden(_ sender: Any) {
         Button4th.isHidden = true
         Button2nd.isHidden = false
     }
     
-    @IBAction func NonbuttonHyden(_ sender: Any) {
+    @IBAction func NonbuttonHidden(_ sender: Any) {
         Button4th.isHidden = false
         Button2nd.isHidden = false
     }
@@ -137,15 +138,12 @@ class ViewController: UIViewController {
         // verticall animation
         
             UIView.animate(withDuration: 0.5) {
-                self.MyView.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height) //changer X et Y pour le landscape
+                self.MyView.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
             }
-        // Après l'annulation du partage ou le partage
-            /*UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: { self.MyView.transform = .identity
-            }
-                ,completion: nil) */
+        
         }
     private func moveViewHorizontally() {
-        // verticall animation
+        // Horizontal animation
         
         UIView.animate(withDuration: 0.5) {
             self.MyView.transform = CGAffineTransform(translationX: -self.view.frame.height, y: 0)
