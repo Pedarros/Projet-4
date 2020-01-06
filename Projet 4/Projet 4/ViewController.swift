@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet var MySwipe: UISwipeGestureRecognizer!
     
     @IBAction func SwipeUp(_ sender: Any) {
+        // There's two cases : If the device is in portrait or in landscape. In the first case, it's swipe up, in the second it's swipe left
         if UIDevice.current.orientation.isPortrait {
             MySwipe.direction = .up
             moveViewVertically()
@@ -34,9 +35,7 @@ class ViewController: UIViewController {
             convertViewToImage()
             
         }
-    /*    let activityController = UIActivityViewController(activityItems: [UITextField.text], applicationActivities: nil)
-        present(activityController, animated: true, completion: nil)
-        */
+    
     }
     
     @IBOutlet weak var MyView: UIView!
