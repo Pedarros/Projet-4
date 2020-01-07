@@ -92,23 +92,30 @@ class ViewController: UIViewController {
     
     // Function for uploading images
     @IBAction func UploadImageTopleft(_ sender: Any) {
+       
         imageTmp = Button1st
         self.presentWithSource(source: .photoLibrary)
+         Button1st.setImage(UIImage(named: "imageTmp"), for: .normal)
+        
+        
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
         imageTmp = Button2nd
         self.presentWithSource(source: .photoLibrary)
+         Button2nd.setImage(UIImage(named: "imageTmp"), for: .normal)
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
         imageTmp = Button4th
         self.presentWithSource(source: .photoLibrary)
+         Button4th.setImage(UIImage(named: "imageTmp"), for: .normal)
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
         imageTmp = Button3rd
         self.presentWithSource(source: .photoLibrary)
+         Button3rd.setImage(UIImage(named: "imageTmp"), for: .normal)
     }
     
     // Function for uploading images
