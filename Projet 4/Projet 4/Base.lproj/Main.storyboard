@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,11 +20,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Projet_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-Iw-4pL">
-                                <rect key="frame" x="62.666666666666657" y="281" width="249.99999999999997" height="250"/>
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="44F-rh-NHo">
                                         <rect key="frame" x="10" y="10" width="230" height="230"/>
@@ -145,10 +145,10 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mA5-eq-nW6">
-                                <rect key="frame" x="30" y="678" width="315" height="70"/>
+                                <rect key="frame" x="30" y="762" width="354" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b07-4R-02j">
-                                        <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="70"/>
                                         <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
                                             <action selector="Button2ndHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nce-o5-AFZ"/>
@@ -156,7 +156,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLh-1g-C1c">
-                                        <rect key="frame" x="111.66666666666666" y="0.0" width="91.666666666666657" height="70"/>
+                                        <rect key="frame" x="124.5" y="0.0" width="105" height="70"/>
                                         <state key="normal" backgroundImage="Layout 2"/>
                                         <connections>
                                             <action selector="Button4thHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FuS-4T-FPZ"/>
@@ -164,9 +164,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukm-SS-Wxi">
-                                        <rect key="frame" x="223.33333333333334" y="0.0" width="91.666666666666657" height="70"/>
+                                        <rect key="frame" x="249.5" y="0.0" width="104.5" height="70"/>
                                         <state key="normal" backgroundImage="Layout 3"/>
                                         <connections>
+                                            <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrs-4U-hja"/>
                                             <action selector="NonbuttonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htP-kN-qNH"/>
                                         </connections>
                                     </button>
@@ -191,13 +192,17 @@
                                 </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-gU-Dhq">
-                                <rect key="frame" x="136.33333333333334" y="64" width="102.66666666666666" height="33.666666666666657"/>
+                                <rect key="frame" x="155.5" y="64" width="103" height="34"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
+                                <rect key="frame" x="205" y="200.5" width="4.5" height="83"/>
+                                <variation key="heightClass=compact" image="Arrow Left"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Qv-2j9">
-                                <rect key="frame" x="119.66666666666667" y="246.66666666666666" width="135.66666666666663" height="24.333333333333343"/>
+                                <rect key="frame" x="139.5" y="288.5" width="135.5" height="24.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Swipe left to share">
                                         <attributes>
@@ -218,19 +223,17 @@
                                     </attributedString>
                                 </variation>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
-                                <rect key="frame" x="185.33333333333334" y="200.33333333333334" width="4.6666666666666572" height="41.333333333333343"/>
-                                <variation key="heightClass=compact" image="Arrow Left"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.71670317649841309" green="0.84386688470840454" blue="0.895760178565979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0Zl-Qv-2j9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ZX-UV-duU">
                                 <variation key="heightClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="0Zl-Qv-2j9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83c-fR-eLL"/>
                             <constraint firstItem="mYs-Iw-4pL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0Zl-Qv-2j9" secondAttribute="trailing" priority="750" constant="57" id="89d-Uf-obv">
                                 <variation key="heightClass=compact" constant="-2"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="mYs-Iw-4pL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="it5-CG-KAx" secondAttribute="trailing" constant="98" id="8r3-zk-tnC"/>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="9qU-5L-5F9"/>
@@ -241,7 +244,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mA5-eq-nW6" secondAttribute="bottom" constant="30" id="MEz-UI-6md"/>
                             <constraint firstItem="0Zl-Qv-2j9" firstAttribute="top" secondItem="it5-CG-KAx" secondAttribute="bottom" constant="5" id="Mqr-1n-RCz"/>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OOQ-CO-hsv"/>
-                            <constraint firstItem="it5-CG-KAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="QUv-h7-c33"/>
+                            <constraint firstItem="it5-CG-KAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="QUv-h7-c33">
+                                <variation key="heightClass=compact-widthClass=compact" constant="65"/>
+                            </constraint>
                             <constraint firstItem="p0F-gU-Dhq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SuY-0W-JOu"/>
                             <constraint firstItem="0Zl-Qv-2j9" firstAttribute="top" secondItem="it5-CG-KAx" secondAttribute="bottom" constant="21" id="Tbe-VW-lu0"/>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vlz-9Y-bEC"/>
@@ -255,12 +260,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mA5-eq-nW6" secondAttribute="trailing" constant="30" id="opD-bN-ZK0"/>
                             <constraint firstItem="0Zl-Qv-2j9" firstAttribute="top" secondItem="it5-CG-KAx" secondAttribute="bottom" constant="13" id="pTa-VP-naC">
                                 <variation key="heightClass=compact" constant="19.666666666666686"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="7.5"/>
                             </constraint>
                             <constraint firstItem="mA5-eq-nW6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pjw-Fl-69N"/>
                             <constraint firstItem="mYs-Iw-4pL" firstAttribute="top" secondItem="0Zl-Qv-2j9" secondAttribute="bottom" constant="10" id="qwL-d5-EhJ"/>
                             <constraint firstItem="it5-CG-KAx" firstAttribute="top" relation="lessThanOrEqual" secondItem="p0F-gU-Dhq" secondAttribute="bottom" constant="102.66666666666667" id="rgB-Yb-Gzc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mA5-eq-nW6" secondAttribute="bottom" constant="30" id="ror-6f-Grd"/>
-                            <constraint firstItem="it5-CG-KAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="sxF-3l-Zkb"/>
+                            <constraint firstItem="it5-CG-KAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="sxF-3l-Zkb">
+                                <variation key="heightClass=compact-widthClass=compact" constant="142"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mA5-eq-nW6" secondAttribute="trailing" constant="30" id="uFz-qC-4lD"/>
                             <constraint firstItem="p0F-gU-Dhq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wMK-fD-5kl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mA5-eq-nW6" secondAttribute="trailing" constant="30" id="xs6-ON-CxY"/>
@@ -368,11 +376,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Arrow Left" width="3.3333332538604736" height="4.6666665077209473"/>
-        <image name="Arrow Up" width="4.6666665077209473" height="3.3333332538604736"/>
-        <image name="Layout 1" width="26.666666030883789" height="26.666666030883789"/>
-        <image name="Layout 2" width="26.666666030883789" height="26.666666030883789"/>
-        <image name="Layout 3" width="26.666666030883789" height="26.666666030883789"/>
-        <image name="Plus" width="13.333333015441895" height="13.333333015441895"/>
+        <image name="Arrow Left" width="3.5" height="4.5"/>
+        <image name="Arrow Up" width="4.5" height="3.5"/>
+        <image name="Layout 1" width="27" height="27"/>
+        <image name="Layout 2" width="27" height="27"/>
+        <image name="Layout 3" width="27" height="27"/>
+        <image name="Plus" width="13.5" height="13.5"/>
     </resources>
 </document>

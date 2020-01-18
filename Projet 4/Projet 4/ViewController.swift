@@ -3,11 +3,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // This is an initialiser function. We load the main view in order to us
     override func viewDidLoad() {
         super.viewDidLoad()
         image.delegate = self
         image.allowsEditing = true
-        // Do any additional setup after loading the view.
+        
     }
     let image = UIImagePickerController()
     
@@ -69,7 +70,7 @@ class ViewController: UIViewController {
     
     // Insert of the selected background
     @IBAction func LLBSelected(_ sender: Any) {
-         LowerLeftButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
+         LowerLeftButton.setBackgroundImage(UIImage(named: "select1"), for: .normal)
         LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
         LowerRightButton.setBackgroundImage(UIImage(named: "Layout 3"), for: .normal)
         }
@@ -77,19 +78,26 @@ class ViewController: UIViewController {
     
     
     @IBAction func LMBSelected(_ sender: Any) {
-        LowerMiddleButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
+        LowerMiddleButton.setBackgroundImage(UIImage(named: "select2"), for: .normal)
         LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
         LowerRightButton.setBackgroundImage(UIImage(named: "Layout 3"), for: .normal)
         
     }
     
     @IBAction func LRBSelected(_ sender: Any) {
-        LowerRightButton.setBackgroundImage(UIImage(named: "Selected"), for: .normal)
+        LowerRightButton.setBackgroundImage(UIImage(named: "select3"), for: .normal)
         LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
         LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
-        
     }
     
+    /*
+    @IBAction func LRBSelected(_ sender: Any) {
+        LowerRightButton.setBackgroundImage(UIImage(named: "select3"), for: .normal)
+        LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
+        LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
+
+    }
+    */
     // Function for uploading images
     @IBAction func UploadImageTopleft(_ sender: Any) {
        
