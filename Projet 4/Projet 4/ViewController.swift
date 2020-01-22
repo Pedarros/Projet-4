@@ -1,8 +1,7 @@
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     // This is an initialiser function. We load the main view in order to us
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button2nd: UIButton!
     @IBOutlet weak var Button3rd: UIButton!
     @IBOutlet weak var Button4th: UIButton!
-   
+    
     // Function for the swipe
     
     @IBOutlet var MySwipe: UISwipeGestureRecognizer!
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
             convertViewToImage()
             
         }
-    
+        
     }
     
     @IBOutlet weak var MyView: UIView!
@@ -47,7 +46,7 @@ class ViewController: UIViewController {
         Button4th.isHidden = false
     }
     
-     // Hyding the second button in order to have a bigger picture at the bottom
+    // Hyding the second button in order to have a bigger picture at the bottom
     
     @IBAction func Button4thHidden(_ sender: Any) {
         Button4th.isHidden = true
@@ -66,15 +65,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var LowerRightButton: UIButton!
     
-   
+    
     
     // Insert of the selected background
     @IBAction func LLBSelected(_ sender: Any) {
-         LowerLeftButton.setBackgroundImage(UIImage(named: "select1"), for: .normal)
+        LowerLeftButton.setBackgroundImage(UIImage(named: "select1"), for: .normal)
         LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
         LowerRightButton.setBackgroundImage(UIImage(named: "Layout 3"), for: .normal)
-        }
-        
+    }
+    
     
     
     @IBAction func LMBSelected(_ sender: Any) {
@@ -90,20 +89,12 @@ class ViewController: UIViewController {
         LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
     }
     
-    /*
-    @IBAction func LRBSelected(_ sender: Any) {
-        LowerRightButton.setBackgroundImage(UIImage(named: "select3"), for: .normal)
-        LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
-        LowerLeftButton.setBackgroundImage(UIImage(named: "Layout 1"), for: .normal)
-
-    }
-    */
     // Function for uploading images
     @IBAction func UploadImageTopleft(_ sender: Any) {
-       
+        
         imageTmp = Button1st
         self.presentWithSource(source: .photoLibrary)
-         Button1st.setImage(UIImage(named: "imageTmp"), for: .normal)
+        Button1st.setImage(UIImage(named: "imageTmp"), for: .normal)
         
         
     }
@@ -111,19 +102,19 @@ class ViewController: UIViewController {
     @IBAction func UploadImageTopRight(_ sender: Any) {
         imageTmp = Button2nd
         self.presentWithSource(source: .photoLibrary)
-         Button2nd.setImage(UIImage(named: "imageTmp"), for: .normal)
+        Button2nd.setImage(UIImage(named: "imageTmp"), for: .normal)
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
         imageTmp = Button4th
         self.presentWithSource(source: .photoLibrary)
-         Button4th.setImage(UIImage(named: "imageTmp"), for: .normal)
+        Button4th.setImage(UIImage(named: "imageTmp"), for: .normal)
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
         imageTmp = Button3rd
         self.presentWithSource(source: .photoLibrary)
-         Button3rd.setImage(UIImage(named: "imageTmp"), for: .normal)
+        Button3rd.setImage(UIImage(named: "imageTmp"), for: .normal)
     }
     
     // Function for uploading images
@@ -152,11 +143,11 @@ class ViewController: UIViewController {
     private func moveViewVertically() {
         // verticall animation
         
-            UIView.animate(withDuration: 0.5) {
-                self.MyView.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
-            }
-        
+        UIView.animate(withDuration: 0.5) {
+            self.MyView.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
         }
+        
+    }
     private func moveViewHorizontally() {
         // Horizontal animation
         

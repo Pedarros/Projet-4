@@ -151,7 +151,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="104.5" height="70"/>
                                         <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
-                                            <action selector="Button2ndHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nce-o5-AFZ"/>
                                             <action selector="LLBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nty-wa-DII"/>
                                         </connections>
                                     </button>
@@ -159,7 +158,6 @@
                                         <rect key="frame" x="124.5" y="0.0" width="105" height="70"/>
                                         <state key="normal" backgroundImage="Layout 2"/>
                                         <connections>
-                                            <action selector="Button4thHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FuS-4T-FPZ"/>
                                             <action selector="LMBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65m-Dr-ZoI"/>
                                         </connections>
                                     </button>
@@ -168,7 +166,6 @@
                                         <state key="normal" backgroundImage="Layout 3"/>
                                         <connections>
                                             <action selector="LRBSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrs-4U-hja"/>
-                                            <action selector="NonbuttonHyden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htP-kN-qNH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -198,7 +195,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
-                                <rect key="frame" x="205" y="200.5" width="4.5" height="83"/>
+                                <rect key="frame" x="199" y="200.5" width="16" height="83"/>
                                 <variation key="heightClass=compact" image="Arrow Left"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Qv-2j9">
