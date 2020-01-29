@@ -190,17 +190,17 @@
                                 </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-gU-Dhq">
-                                <rect key="frame" x="122.5" y="40" width="130.5" height="43"/>
+                                <rect key="frame" x="123.5" y="40" width="128.5" height="38.5"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="33"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
-                                <rect key="frame" x="185.5" y="165.5" width="4.5" height="3.5"/>
+                                <rect key="frame" x="179.5" y="151.5" width="16" height="16"/>
                                 <variation key="heightClass=compact" image="Arrow Left"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Qv-2j9">
-                                <rect key="frame" x="120" y="174" width="135.5" height="24.5"/>
+                                <rect key="frame" x="98.5" y="172.5" width="178" height="26"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Swipe left to share">
                                         <attributes>
@@ -277,8 +277,6 @@
                                 <exclude reference="ror-6f-Grd"/>
                                 <exclude reference="xs6-ON-CxY"/>
                                 <exclude reference="SuY-0W-JOu"/>
-                                <exclude reference="QUv-h7-c33"/>
-                                <exclude reference="sxF-3l-Zkb"/>
                                 <exclude reference="6ZX-UV-duU"/>
                                 <exclude reference="Tbe-VW-lu0"/>
                                 <exclude reference="pTa-VP-naC"/>
@@ -287,6 +285,8 @@
                                 <exclude reference="Wx0-F6-cxJ"/>
                                 <exclude reference="YMt-rU-Azj"/>
                                 <exclude reference="fFw-6q-Waw"/>
+                                <exclude reference="QUv-h7-c33"/>
+                                <exclude reference="sxF-3l-Zkb"/>
                                 <exclude reference="OOQ-CO-hsv"/>
                                 <exclude reference="Vlz-9Y-bEC"/>
                             </mask>
@@ -295,8 +295,6 @@
                             <mask key="constraints">
                                 <include reference="xs6-ON-CxY"/>
                                 <include reference="SuY-0W-JOu"/>
-                                <include reference="QUv-h7-c33"/>
-                                <include reference="sxF-3l-Zkb"/>
                                 <include reference="6ZX-UV-duU"/>
                                 <exclude reference="Tbe-VW-lu0"/>
                                 <include reference="pTa-VP-naC"/>
@@ -305,6 +303,8 @@
                                 <include reference="Wx0-F6-cxJ"/>
                                 <include reference="YMt-rU-Azj"/>
                                 <include reference="fFw-6q-Waw"/>
+                                <include reference="QUv-h7-c33"/>
+                                <include reference="sxF-3l-Zkb"/>
                                 <include reference="OOQ-CO-hsv"/>
                                 <include reference="Vlz-9Y-bEC"/>
                             </mask>
@@ -317,12 +317,12 @@
                                 <exclude reference="uFz-qC-4lD"/>
                                 <exclude reference="CVW-k1-A2D"/>
                                 <exclude reference="wMK-fD-5kl"/>
-                                <exclude reference="Xl7-7q-ma2"/>
-                                <exclude reference="rgB-Yb-Gzc"/>
                                 <exclude reference="83c-fR-eLL"/>
                                 <exclude reference="Mqr-1n-RCz"/>
                                 <exclude reference="db0-51-LsD"/>
                                 <exclude reference="qwL-d5-EhJ"/>
+                                <exclude reference="Xl7-7q-ma2"/>
+                                <exclude reference="rgB-Yb-Gzc"/>
                                 <exclude reference="9qU-5L-5F9"/>
                                 <exclude reference="IC9-yK-ozB"/>
                                 <exclude reference="nW2-N9-VPw"/>
@@ -338,12 +338,12 @@
                                 <exclude reference="uFz-qC-4lD"/>
                                 <exclude reference="CVW-k1-A2D"/>
                                 <exclude reference="wMK-fD-5kl"/>
-                                <exclude reference="Xl7-7q-ma2"/>
-                                <exclude reference="rgB-Yb-Gzc"/>
                                 <exclude reference="83c-fR-eLL"/>
                                 <exclude reference="Mqr-1n-RCz"/>
                                 <exclude reference="db0-51-LsD"/>
                                 <exclude reference="qwL-d5-EhJ"/>
+                                <exclude reference="Xl7-7q-ma2"/>
+                                <exclude reference="rgB-Yb-Gzc"/>
                                 <exclude reference="9qU-5L-5F9"/>
                                 <exclude reference="IC9-yK-ozB"/>
                                 <exclude reference="nW2-N9-VPw"/>
