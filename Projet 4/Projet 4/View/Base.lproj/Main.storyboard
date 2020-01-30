@@ -190,17 +190,17 @@
                                 </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-gU-Dhq">
-                                <rect key="frame" x="123.5" y="40" width="128.5" height="38.5"/>
+                                <rect key="frame" x="122.5" y="40" width="130.5" height="43"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="33"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="it5-CG-KAx">
-                                <rect key="frame" x="179.5" y="151.5" width="16" height="16"/>
+                                <rect key="frame" x="185.5" y="165.5" width="4.5" height="3.5"/>
                                 <variation key="heightClass=compact" image="Arrow Left"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Qv-2j9">
-                                <rect key="frame" x="98.5" y="172.5" width="178" height="26"/>
+                                <rect key="frame" x="120" y="174" width="135.5" height="24.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Swipe left to share">
                                         <attributes>

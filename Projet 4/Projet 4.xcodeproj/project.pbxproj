@@ -12,7 +12,6 @@
 		C36E4ABD237CADB500499028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E4ABB237CADB500499028 /* Main.storyboard */; };
 		C36E4ABF237CADB700499028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36E4ABE237CADB700499028 /* Assets.xcassets */; };
 		C36E4AC2237CADB700499028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E4AC0237CADB700499028 /* LaunchScreen.storyboard */; };
-		C36E4ACB2383E7E200499028 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C36E4ACA2383E7E200499028 /* ThirstySoftRegular.otf */; };
 		C36E4ACD2383E81500499028 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C36E4ACC2383E81500499028 /* Delm-Medium.otf */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +23,8 @@
 		C36E4ABE237CADB700499028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C36E4AC1237CADB700499028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36E4AC3237CADB700499028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C36E4ACA2383E7E200499028 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ThirstySoftRegular.otf; path = ../../../../Downloads/ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		C36E4ACC2383E81500499028 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		C377F0B123E2CE0300E3233C /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +57,32 @@
 		C36E4AB6237CADB500499028 /* Projet 4 */ = {
 			isa = PBXGroup;
 			children = (
-				C36E4AB7237CADB500499028 /* AppDelegate.swift */,
-				C36E4AB9237CADB500499028 /* ViewController.swift */,
-				C36E4ABB237CADB500499028 /* Main.storyboard */,
-				C36E4ABE237CADB700499028 /* Assets.xcassets */,
-				C36E4ACC2383E81500499028 /* Delm-Medium.otf */,
-				C36E4ACA2383E7E200499028 /* ThirstySoftRegular.otf */,
-				C36E4AC0237CADB700499028 /* LaunchScreen.storyboard */,
+				C377F0B023E2CDDF00E3233C /* View */,
+				C377F0AD23E2CD9900E3233C /* Controller */,
 				C36E4AC3237CADB700499028 /* Info.plist */,
 			);
 			path = "Projet 4";
+			sourceTree = "<group>";
+		};
+		C377F0AD23E2CD9900E3233C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C36E4AB7237CADB500499028 /* AppDelegate.swift */,
+				C36E4AB9237CADB500499028 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C377F0B023E2CDDF00E3233C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C36E4AC0237CADB700499028 /* LaunchScreen.storyboard */,
+				C36E4ABB237CADB500499028 /* Main.storyboard */,
+				C377F0B123E2CE0300E3233C /* ThirstySoftRegular.otf */,
+				C36E4ABE237CADB700499028 /* Assets.xcassets */,
+				C36E4ACC2383E81500499028 /* Delm-Medium.otf */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +146,6 @@
 				C36E4AC2237CADB700499028 /* LaunchScreen.storyboard in Resources */,
 				C36E4ACD2383E81500499028 /* Delm-Medium.otf in Resources */,
 				C36E4ABF237CADB700499028 /* Assets.xcassets in Resources */,
-				C36E4ACB2383E7E200499028 /* ThirstySoftRegular.otf in Resources */,
 				C36E4ABD237CADB500499028 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
