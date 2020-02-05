@@ -3,7 +3,7 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    // This is an initialiser function. We load the main view in order to us
+    // This is an initialiser function. We load the main view in order to use it.
     override func viewDidLoad()
     {
         super.viewDidLoad()
