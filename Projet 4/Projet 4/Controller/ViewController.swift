@@ -9,7 +9,7 @@ class ViewController: UIViewController
         super.viewDidLoad()
         image.delegate = self
         image.allowsEditing = true
-        
+        changeButton()
     }
     
     let image = UIImagePickerController()
@@ -54,6 +54,11 @@ class ViewController: UIViewController
     // Insert of the selected background
     @IBAction func LLBSelected(_ sender: Any)
     {
+        changeButton()
+    }
+    
+    func changeButton()
+    {
         LowerLeftButton.setBackgroundImage(UIImage(named: "select1"), for: .normal)
         LowerMiddleButton.setBackgroundImage(UIImage(named: "Layout 2"), for: .normal)
         LowerRightButton.setBackgroundImage(UIImage(named: "Layout 3"), for: .normal)
@@ -61,8 +66,6 @@ class ViewController: UIViewController
         Button2nd.isHidden = true
         Button4th.isHidden = false
     }
-    
-    
     
     @IBAction func LMBSelected(_ sender: Any)
     {

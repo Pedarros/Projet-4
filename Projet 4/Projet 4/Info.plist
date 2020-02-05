@@ -43,6 +43,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Our application needs permission to write photos
+
+
+
+
+Tapez un message
+</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>ThirsySoftRegular.otf</string>
