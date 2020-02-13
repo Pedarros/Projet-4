@@ -3,28 +3,25 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    // This is an initialiser function. We load the main view in order to use it.
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        image.delegate = self
-        image.allowsEditing = true
-        changeButton()
-    }
-    
+    // MARK - Variables
     let image = UIImagePickerController()
     var imageTmp =  UIButton()
+    
+    // MARK - IBOutlet
     
     // Declaration of the buttons where we'll upload the photos
     @IBOutlet weak var Button1st: UIButton!
     @IBOutlet weak var Button2nd: UIButton!
     @IBOutlet weak var Button3rd: UIButton!
     @IBOutlet weak var Button4th: UIButton!
-    
-    // Function for the swipe
-    
+    @IBOutlet weak var MyView: UIView!
+    // Declaration of the three buttons at the bottom
+    @IBOutlet weak var LowerLeftButton: UIButton!
+    @IBOutlet weak var LowerMiddleButton: UIButton!
+    @IBOutlet weak var LowerRightButton: UIButton!
     @IBOutlet var MySwipe: UISwipeGestureRecognizer!
     
+    // MARK - Functions
     @IBAction func SwipeUp(_ sender: UISwipeGestureRecognizer?)
     {
         if let gesture = sender {
@@ -41,17 +38,6 @@ class ViewController: UIViewController
             }
         }
     }
-    
-    @IBOutlet weak var MyView: UIView!
-    
-    // Declaration of the three buttons at the bottom
-    @IBOutlet weak var LowerLeftButton: UIButton!
-    
-    @IBOutlet weak var LowerMiddleButton: UIButton!
-    
-    @IBOutlet weak var LowerRightButton: UIButton!
-    
-    // Insert of the selected background
     @IBAction func LLBSelected(_ sender: Any)
     {
         changeButton()
@@ -92,6 +78,7 @@ class ViewController: UIViewController
         imageTmp = Button1st
         self.presentWithSource(source: .photoLibrary)
         Button1st.setImage(UIImage(named: "imageTmp"), for: .normal)
+        
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
@@ -110,6 +97,16 @@ class ViewController: UIViewController
         imageTmp = Button3rd
         self.presentWithSource(source: .photoLibrary)
         Button3rd.setImage(UIImage(named: "imageTmp"), for: .normal)
+    }
+    
+    
+    // This is an initialiser function. We load the main view in order to use it.
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        image.delegate = self
+        image.allowsEditing = true
+        changeButton()
     }
     
     // Function for uploading images
