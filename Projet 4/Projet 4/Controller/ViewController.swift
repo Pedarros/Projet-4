@@ -77,28 +77,28 @@ class ViewController: UIViewController
         
         imageTmp = Button1st
         self.presentWithSource(source: .photoLibrary)
-        Button1st.setImage(UIImage(named: "imageTmp"), for: .normal)
+        
         
     }
     
     @IBAction func UploadImageTopRight(_ sender: Any) {
         imageTmp = Button2nd
         self.presentWithSource(source: .photoLibrary)
-        Button2nd.setImage(UIImage(named: "imageTmp"), for: .normal)
+       
     }
     
     @IBAction func UploadImageBottomLeft(_ sender: Any) {
         imageTmp = Button4th
         self.presentWithSource(source: .photoLibrary)
-        Button4th.setImage(UIImage(named: "imageTmp"), for: .normal)
+        
     }
     
     @IBAction func UploadImageBottomRight(_ sender: Any) {
         imageTmp = Button3rd
         self.presentWithSource(source: .photoLibrary)
-        Button3rd.setImage(UIImage(named: "imageTmp"), for: .normal)
+        
     }
-    
+   
     
     // This is an initialiser function. We load the main view in order to use it.
     override func viewDidLoad()
@@ -114,6 +114,9 @@ class ViewController: UIViewController
         image.sourceType = source
         present(image, animated: true, completion: nil)
     }
+    
+    // MARK - Private Func
+    
     private func convertViewToImage() {
         // convert Grid view to an image
         UIGraphicsBeginImageContextWithOptions(MyView.frame.size, view.isOpaque, 0)
@@ -150,12 +153,12 @@ class ViewController: UIViewController
     
 }
 
-
+// MARK - Extension
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // extention for presentWithSource function
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let edite = info[.editedImage] as? UIImage {
-            imageTmp.setBackgroundImage(edite, for: .normal)
+            imageTmp.setImage(edite, for: .normal)
         }
         dismiss(animated: true, completion: nil)
     }
